@@ -23,12 +23,12 @@ Django app that allows you to customize your app names on the admin site. Create
 
 You have to have the same value for `verbose_name` in each `ModelAdmin` definition, if you want to have those models appear under the same app name in the admin site. I find the following helpful if I have a bunch of `ModelAdmin`s to change:
 
-        class MyAppAdminBase(admin.ModelAdmin):
-            verbose_name = "New Name for App"
-    
-        class SomeOtherAdmin(MyAppAdminBase):
-            pass
-    
-        class AnotherAdmin(MyAppAdminBase):
-            pass
-        ...
+    class MyAppAdminBase(admin.ModelAdmin):
+        verbose_name = "New Name for App"
+
+    class SomeOtherAdmin(MyAppAdminBase):
+        pass
+
+    class AnotherAdmin(MyAppAdminBase):
+        pass
+    ...
