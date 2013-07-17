@@ -1,0 +1,4 @@
+*.pyc
+
+# sqlite database name
+testproject/dummy
